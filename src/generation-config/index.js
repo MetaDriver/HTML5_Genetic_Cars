@@ -6,11 +6,11 @@ var schema = carConstruct.generateSchema(carConstants);
 var pickParent = require("./pickParent");
 var selectFromAllParents = require("./selectFromAllParents");
 const constants = {
-  generationSize: 20,
+  generationSize: 50,
   schema: schema,
-  championLength: 1,
-  mutation_range: 1,
-  gen_mutation: 0.05,
+  championLength: 10,
+  mutation_range: 0.75,
+  gen_mutation: 0.2,
 };
 module.exports = function(){
   var currentChoices = new Map();
